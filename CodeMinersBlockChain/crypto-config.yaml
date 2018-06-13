@@ -1,0 +1,30 @@
+
+OrdererOrgs:
+  - Name: Orderer
+    Domain: gbtcodeminers.com
+    Specs:
+      - Hostname: orderer
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.gbtcodeminers.com
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+  - Name: Org2
+    Domain: org2.gbtcodeminers.com
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+  - Name: Org3
+    Domain: org3.gbtcodeminers.com
+    Template:
+      Count: 1
+    Users:
+      Count: 1

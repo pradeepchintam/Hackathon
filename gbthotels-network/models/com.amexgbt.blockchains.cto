@@ -1,0 +1,54 @@
+namespace com.amexgbt.blockchains
+
+participant Entity identified by entityId {
+  o String entityId
+  o String entityName 
+}
+
+asset HotelCommission identified by hotelCommissionId {
+  o String hotelCommissionId
+  --> Entity responsibleEntity
+  --> Entity requestorEntity
+  o String source
+  o String recordlocator
+  o String ratecodeBooked
+  o Double totalValue
+  o Double commissionValue
+  o String checkinDate
+  o String checkoutDate
+  o String travelerName
+}
+
+asset HotelReservationRequest identified by hotelRequestId {
+	o String hotelRequestId
+    --> Entity requestor
+    o String location
+    o DateTime checkinDate
+    o DateTime checkoutDate
+}
+
+asset Traveler identified by travelerId{
+	o String travelerId
+    o String firstName
+    o String lastName
+}
+
+asset HotelReservationResponse identified by hotelReservationResponseId {
+	o String hotelReservationResponseId
+    --> HotelReservationRequest hotelReservationRequest
+    --> Entity hotel
+    o String address
+    o Double totalCost
+}
+
+transaction BookHotel{
+  	--> HotelReservationResponse hotelReservationResponse
+    --> Traveler traveler
+    o String paymentDetails
+}
+
+transaction CommissionTransaction {
+  --> HotelCommission hotelcommission
+  o String responseCode
+  o String paymentDetails  
+}
