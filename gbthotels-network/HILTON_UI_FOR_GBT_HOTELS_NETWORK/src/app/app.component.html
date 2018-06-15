@@ -14,44 +14,44 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <p class="network-name">gbthotels-network@0.0.1.bna</p>
-        <p class="navbar-brand">HILTON_UI_FOR_GBT_HOTELS_NETWORK</p>
+        <p class="navbar-brand">HILTON's Blockchain UI</p>
       </div>
       <ul class="nav navbar-nav">
-        <li class="dropdown active">
-            <a class="dropdown-toggle" data-toggle="dropdown">Assets</a>
+          <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown">Requests On The Network</a>
+              <ul class="dropdown-menu scrollable-menu">
+                
+                <li><a [routerLink]="['/HotelCommission']">Hotel Commission Request</a></li>
+                
+                <li><a [routerLink]="['/HotelReservationRequest']">Hotel Reshop Request</a></li>
+                
+                <li><a [routerLink]="['/Traveler']">Traveler</a></li>
+                
+                <li><a [routerLink]="['/HotelReservationResponse']">Hotel Reshop Response</a></li>
+                
+              </ul>
+          </li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown">Participants On The Network</a>
             <ul class="dropdown-menu scrollable-menu">
               
-              <li><a [routerLink]="['/HotelCommission']">HotelCommission</a></li>
-              
-              <li><a [routerLink]="['/HotelReservationRequest']">HotelReservationRequest</a></li>
-              
-              <li><a [routerLink]="['/Traveler']">Traveler</a></li>
-              
-              <li><a [routerLink]="['/HotelReservationResponse']">HotelReservationResponse</a></li>
+              <li><a [routerLink]="['/Entity']">Entity</a></li>
               
             </ul>
         </li>
         <li class="dropdown active">
-          <a class="dropdown-toggle" data-toggle="dropdown">Participants</a>
+          <a class="dropdown-toggle" data-toggle="dropdown">Transactions On The Network</a>
           <ul class="dropdown-menu scrollable-menu">
             
-            <li><a [routerLink]="['/Entity']">Entity</a></li>
+            <li><a [routerLink]="['/BookHotel']">BookHotel</a></li>
+            
+            <li><a [routerLink]="['/CommissionTransaction']">CommissionTransaction</a></li>
             
           </ul>
       </li>
-      <li class="dropdown active">
-        <a class="dropdown-toggle" data-toggle="dropdown">Transactions</a>
-        <ul class="dropdown-menu scrollable-menu">
-          
-          <li><a [routerLink]="['/BookHotel']">BookHotel</a></li>
-          
-          <li><a [routerLink]="['/CommissionTransaction']">CommissionTransaction</a></li>
-          
         </ul>
-    </li>
-      </ul>
-    </div>
-  </nav>
+      </div>
+    </nav>
+    
+    <router-outlet></router-outlet>
   
-  <router-outlet></router-outlet>

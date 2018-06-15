@@ -16,7 +16,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="addAssetModalLabel">Create asset</h4>
+        <h4 class="modal-title" id="addAssetModalLabel">Create A Response Hotel Reshop Request</h4>
           <p class="modal-intro">Enter the required values below.</p>
       </div>
       <form [formGroup]="myForm">
@@ -27,7 +27,7 @@
 
             
               <div class="form-group text-left">
-                <label for="hotelReservationResponseId">hotelReservationResponseId</label>
+                <label for="hotelReservationResponseId">Hotel Reshop Response Id</label>
                 
                   <input formControlName="hotelReservationResponseId" type="text" class="form-control">
                 
@@ -37,7 +37,7 @@
 
             
               <div class="form-group text-left">
-                <label for="hotelReservationRequest">hotelReservationRequest</label>
+                <label for="hotelReservationRequest">Hotel Reshop Request Ref#</label>
                 
                     <textarea formControlName="hotelReservationRequest" class="form-control" rows="3"></textarea>
                 
@@ -47,7 +47,7 @@
 
             
               <div class="form-group text-left">
-                <label for="hotel">hotel</label>
+                <label for="hotel">Hotel</label>
                 
                     <textarea formControlName="hotel" class="form-control" rows="3"></textarea>
                 
@@ -57,7 +57,7 @@
 
             
               <div class="form-group text-left">
-                <label for="address">address</label>
+                <label for="address">Address And Details</label>
                 
                   <input formControlName="address" type="text" class="form-control">
                 
@@ -67,7 +67,7 @@
 
             
               <div class="form-group text-left">
-                <label for="totalCost">totalCost</label>
+                <label for="totalCost">Total Cost</label>
                 
                   <input formControlName="totalCost" type="number" step='any' class="form-control">
                 
@@ -201,7 +201,7 @@
   
   <div class="row">
     <div class="col-md-9">
-        <h1 class="asset-title" id='assetName'>HotelReservationResponse</h1>
+        <h1 class="asset-title" id='assetName'>Hotel Reshop Response</h1>
     </div>
     <div class="col-md-3">
       <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal">
@@ -210,7 +210,7 @@
                 <path fill-rule="evenodd" d="M5.5,4.5 L9.5,4.5 L10,4.5 L10,5.5 L9.5,5.5 L5.5,5.5 L5.5,9.5 L5.5,10 L4.5,10 L4.5,9.5 L4.5,5.5 L0.5,5.5 L0,5.5 L0,4.5 L0.5,4.5 L4.5,4.5 L4.5,0.5 L4.5,0 L5.5,0 L5.5,0.5 L5.5,4.5 Z"/>
               </svg>
           </span>
-        Create Asset
+        Create A Response Hotel Reshop Request
       </button>
     </div>
   </div>
@@ -221,15 +221,15 @@
         <thead class="thead">
           <tr class="thead-cols">
             
-                <th class="info">hotelReservationResponseId</th>
+                <th class="info">Hotel Reshop Response Id</th>
             
-                <th class="info">hotelReservationRequest</th>
+                <th class="info">Hotel Reshop Request Ref#</th>
             
-                <th class="info">hotel</th>
+                <th class="info">Hotel</th>
             
-                <th class="info">address</th>
+                <th class="info">Address And Details</th>
             
-                <th class="info">totalCost</th>
+                <th class="info">Total Cost</th>
             
               <th class="info-actions">Actions</th>
           </tr>

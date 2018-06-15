@@ -16,7 +16,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="addParticipantModalLabel">Create participant</h4>
+          <h4 class="modal-title" id="addParticipantModalLabel">Create Participant</h4>
             <p class="modal-intro">Enter the required values below.</p>
         </div>
         <form [formGroup]="myForm">
@@ -27,7 +27,7 @@
   
               
                 <div class="form-group text-left">
-                  <label for="entityId">entityId</label>
+                  <label for="entityId">Participant Id</label>
                   
                     <input formControlName="entityId" type="text" class="form-control">
                   
@@ -37,7 +37,7 @@
   
               
                 <div class="form-group text-left">
-                  <label for="entityName">entityName</label>
+                  <label for="entityName">Participant Name</label>
                   
                     <input formControlName="entityName" type="text" class="form-control">
                   
@@ -140,7 +140,7 @@
     
     <div class="row">
       <div class="col-md-9">
-          <h1 class="participant-title" id='participantName'>Entity</h1>
+          <h1 class="participant-title" id='participantName'>Participant</h1>
       </div>
       <div class="col-md-3">
         <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addParticipantModal">
@@ -160,9 +160,9 @@
           <thead class="thead">
             <tr class="thead-cols">
               
-                  <th class="info">entityId</th>
+                  <th class="info">Participant Id</th>
               
-                  <th class="info">entityName</th>
+                  <th class="info">Participant Name</th>
               
                 <th class="info-actions">Actions</th>
             </tr>

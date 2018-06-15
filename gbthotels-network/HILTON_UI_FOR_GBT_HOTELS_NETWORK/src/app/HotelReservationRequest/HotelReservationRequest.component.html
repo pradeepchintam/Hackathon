@@ -16,7 +16,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="addAssetModalLabel">Create asset</h4>
+        <h4 class="modal-title" id="addAssetModalLabel">Create Hotel Reshop Request</h4>
           <p class="modal-intro">Enter the required values below.</p>
       </div>
       <form [formGroup]="myForm">
@@ -27,7 +27,7 @@
 
             
               <div class="form-group text-left">
-                <label for="hotelRequestId">hotelRequestId</label>
+                <label for="hotelRequestId">Hotel Reshop Request Id</label>
                 
                   <input formControlName="hotelRequestId" type="text" class="form-control">
                 
@@ -37,7 +37,7 @@
 
             
               <div class="form-group text-left">
-                <label for="requestor">requestor</label>
+                <label for="requestor">Requestor</label>
                 
                     <textarea formControlName="requestor" class="form-control" rows="3"></textarea>
                 
@@ -47,7 +47,7 @@
 
             
               <div class="form-group text-left">
-                <label for="location">location</label>
+                <label for="location">Location</label>
                 
                   <input formControlName="location" type="text" class="form-control">
                 
@@ -57,7 +57,7 @@
 
             
               <div class="form-group text-left">
-                <label for="checkinDate">checkinDate</label>
+                <label for="checkinDate">Checkin Date</label>
                 
                   <input formControlName="checkinDate" type="text" class="form-control">
                 
@@ -67,7 +67,7 @@
 
             
               <div class="form-group text-left">
-                <label for="checkoutDate">checkoutDate</label>
+                <label for="checkoutDate">Checkout Date</label>
                 
                   <input formControlName="checkoutDate" type="text" class="form-control">
                 
@@ -199,7 +199,7 @@
   
   <div class="row">
     <div class="col-md-9">
-        <h1 class="asset-title" id='assetName'>HotelReservationRequest</h1>
+        <h1 class="asset-title" id='assetName'>Hotel Reshop Request</h1>
     </div>
     <div class="col-md-3">
       <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal">
@@ -208,7 +208,7 @@
                 <path fill-rule="evenodd" d="M5.5,4.5 L9.5,4.5 L10,4.5 L10,5.5 L9.5,5.5 L5.5,5.5 L5.5,9.5 L5.5,10 L4.5,10 L4.5,9.5 L4.5,5.5 L0.5,5.5 L0,5.5 L0,4.5 L0.5,4.5 L4.5,4.5 L4.5,0.5 L4.5,0 L5.5,0 L5.5,0.5 L5.5,4.5 Z"/>
               </svg>
           </span>
-        Create Asset
+        Hotel Reshop Request
       </button>
     </div>
   </div>
@@ -219,15 +219,15 @@
         <thead class="thead">
           <tr class="thead-cols">
             
-                <th class="info">hotelRequestId</th>
+                <th class="info">Hotel Reshop Request Id</th>
             
-                <th class="info">requestor</th>
+                <th class="info">Requestor</th>
             
-                <th class="info">location</th>
+                <th class="info">Location</th>
             
-                <th class="info">checkinDate</th>
+                <th class="info">Checkin Date</th>
             
-                <th class="info">checkoutDate</th>
+                <th class="info">Checkout Date</th>
             
               <th class="info-actions">Actions</th>
           </tr>
